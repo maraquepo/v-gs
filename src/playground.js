@@ -1,7 +1,7 @@
-const gf = 'Diane'
+const interval = setInterval(() => {
+  console.log('I eat pie')
+}, 2000)
 
-const people = {
-  [gf]: true
-}
-
-console.log(people)
+setTimeout(() => {
+  clearInterval(interval)
+}, 12000)
